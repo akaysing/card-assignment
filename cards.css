@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F5F7F9;
+    padding: 1rem;
+}
+
+.card {
+    position: relative;
+    max-width: 300px;
+    background-color: white;
+    margin: 1rem;
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.card--image {
+    width: 100%;
+    height: auto;
+    border-radius: 3px 3px 0 0;
+    background-repeat: no-repeat;
+
+}
+
+.card__header {
+    margin: 0.5rem 0;
+    padding: 0 0.2rem;
+}
+
+.card--title {
+    padding: 0.7rem 0.4rem 0.1rem;
+    font-size: 1.4rem;
+}
+
+.card--sub-title {
+    color: rgb(163, 162, 162);
+    padding: 0.1rem 0.4rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.card__body {
+    color: rgb(163, 162, 162);
+    ;
+    padding: 0.2rem 0.6rem 0;
+    font-size: 0.8rem;
+}
+
+.card__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.3rem 0.4rem 0.5rem;
+}
+
+.btn--card-action {
+    color: #6200ee;
+    border: none;
+    background-color: white;
+    width: max-content;
+    padding: 0.2rem;
+    padding-right: 0.6rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn--card-action:hover {
+    background-color: #dfcdf8;
+
+
+}
+
+.card__action-icon {
+    padding: 0.4rem;
+    cursor: pointer;
+
+}
+
+.card__action-icon:hover {
+    background-color: lightgray;
+    border-radius: 50%;
+}
+
+.card2 .card__header {
+    position: absolute;
+    bottom: 5.5rem;
+    color: white;
+}
+
+.card2 .card--sub-title {
+    color: white;
+}
+
+.card3 .card__header {
+    order: -1;
+}
+
+.card4 .card__action-icon {
+    visibility: hidden;
+}
+
+.card5 .btn--card-action {
+    visibility: hidden;
+}
+
+.card6 .card--image {
+    width: 45%;
+}
+
+.card6 .card__header {
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 8.5rem;
+    line-height: 1.5rem;
+}
+
+.card6 .card__body {
+    padding-top: 1rem;
+}
